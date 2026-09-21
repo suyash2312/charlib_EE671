@@ -20,6 +20,7 @@ cells:
     data_slews: [0.01, 0.05, 0.1, 0.2]
     loads: [0.001, 0.005, 0.01, 0.05]
     clock: "posedge CLK"
-    state: "IQ = Q"
+    state:
+      - "IQ = Q"
     functions:
       - "Q <= D"
