@@ -19,5 +19,6 @@ cells:
       - "sky130A/libs.tech/ngspice/sky130.lib.spice tt"
     data_slews: [0.01, 0.05, 0.1, 0.2]
     loads: [0.001, 0.005, 0.01, 0.05]
+    clock: "posedge CLK"
     functions:
-      - "Q = D"
+      - "Q <= D"
