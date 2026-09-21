@@ -1,5 +1,3 @@
-* NGSPICE file created from my_buf.ext - technology: sky130A
-
 .subckt my_buf A Y vdd gnd
 X0 Y a_308_130# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.561 pd=3.22 as=0.374 ps=2.88 w=1.1 l=0.15
 X1 Y a_308_130# gnd gnd sky130_fd_pr__nfet_01v8 ad=0.2142 pd=1.86 as=0.1428 ps=1.52 w=0.42 l=0.15
