@@ -1,0 +1,36 @@
+* NGSPICE file created from and2bnew.ext - technology: sky130A
+
+.subckt and2bnew A B Y VPWR VGND
+X0 a_96_84# A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.462 pd=3.46 as=0.462 ps=3.46 w=1.4 l=0.15
+X1 VPWR a_96_84# a_240_356# VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X2 a_240_356# a_96_84# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X3 Y B a_240_356# VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X4 Y B a_240_356# VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X5 a_240_356# B Y VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X6 a_240_356# B Y VPWR sky130_fd_pr__pfet_01v8 ad=0.4455 pd=3.36 as=0.22275 ps=1.68 w=1.35 l=0.15
+X7 VPWR a_96_84# a_240_356# VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.4455 ps=3.36 w=1.35 l=0.15
+X8 a_240_356# a_96_84# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.22275 pd=1.68 as=0.22275 ps=1.68 w=1.35 l=0.15
+X9 Y B VGND VGND sky130_fd_pr__nfet_01v8 ad=0.1155 pd=1.03 as=0.1155 ps=1.03 w=0.7 l=0.15
+X10 a_96_84# A VGND VGND sky130_fd_pr__nfet_01v8 ad=0.1716 pd=1.7 as=0.1716 ps=1.7 w=0.52 l=0.15
+X11 VGND a_96_84# Y VGND sky130_fd_pr__nfet_01v8 ad=0.1155 pd=1.03 as=0.1155 ps=1.03 w=0.7 l=0.15
+X12 Y a_96_84# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.1155 pd=1.03 as=0.231 ps=2.06 w=0.7 l=0.15
+X13 VGND B Y VGND sky130_fd_pr__nfet_01v8 ad=0.231 pd=2.06 as=0.1155 ps=1.03 w=0.7 l=0.15
+C0 Y a_240_356# 0.49508f
+C1 A a_240_356# 0
+C2 B Y 0.12069f
+C3 VPWR a_96_84# 0.3371f
+C4 VPWR a_240_356# 0.5572f
+C5 a_96_84# a_240_356# 0.14573f
+C6 Y A 0
+C7 VPWR B 0.14849f
+C8 B a_96_84# 0.04537f
+C9 B a_240_356# 0.07457f
+C10 VPWR Y 0.13137f
+C11 VPWR A 0.07666f
+C12 Y a_96_84# 0.04607f
+C13 a_96_84# A 0.06059f
+C14 Y VGND 0.53023f
+C15 VPWR VGND 2.33004f
+C16 a_240_356# VGND 0.59428f
+.ends
+
