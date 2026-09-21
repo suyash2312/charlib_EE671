@@ -1,0 +1,23 @@
+settings:
+  lib_name: dff_final_tt_1v80_025C
+  results_dir: output
+  temperature: 25
+  named_nodes:
+    primary_power:
+      name: vdd
+      voltage: 1.8
+    primary_ground:
+      name: gnd
+      voltage: 0.0
+
+cells:
+  dff_final:
+    netlist: "cells/dff_pex.spice"
+    area: 25.0                           # Replace with your actual layout area from Magic
+    models:
+      - "config/mc_switches.spice"
+      - "sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+    data_slews: [0.01, 0.05, 0.1, 0.2]
+    loads: [0.001, 0.005, 0.01, 0.05]
+    functions:
+      - "Q = D"
