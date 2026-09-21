@@ -4,16 +4,16 @@ settings:
   temperature: 25
   named_nodes:
     primary_power:
-      name: vdd
+      name: VDD
       voltage: 1.8
     primary_ground:
-      name: gnd
+      name: GND
       voltage: 0.0
 
 cells:
   dff_final:
     netlist: "cells/dff_pex.spice"
-    area: 25.0                           # Replace with your actual layout area from Magic
+    area: 25.0
     models:
       - "config/mc_switches.spice"
       - "sky130A/libs.tech/ngspice/sky130.lib.spice tt"
