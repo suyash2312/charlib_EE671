@@ -1,0 +1,23 @@
+settings:
+  lib_name: my_buf_tt_1v80_025C
+  results_dir: output
+  temperature: 25
+  named_nodes:
+    primary_power:
+      name: vdd
+      voltage: 1.8
+    primary_ground:
+      name: gnd
+      voltage: 0.0
+
+cells:
+  my_buf:
+    netlist: "cells/my_buf_pex.spice"
+    area: 5.0                             # Replace with your actual Magic layout area (um^2)
+    models:
+      - "config/mc_switches.spice"
+      - "sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+    data_slews: [0.01, 0.05, 0.1, 0.2]
+    loads: [0.001, 0.005, 0.01, 0.05]
+    functions:
+      - "Y = A"                           # Buffer function (Output strictly follows Input)
